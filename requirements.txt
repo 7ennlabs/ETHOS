@@ -1,0 +1,26 @@
+# requirements.txt
+
+# Temel NLP ve Model Altyapısı
+spacy>=3.7.0,<4.0.0
+transformers[torch]>=4.30.0,<5.0.0  # PyTorch tabanlı transformers
+torch>=2.0.0,<3.0.0              # Veya sisteminize uygun PyTorch sürümü
+numpy<2.0                        # ÖNEMLİ: NumPy 2.x ile uyumsuzlukları önlemek için
+
+# Veri Modelleme ve Doğrulama
+pydantic>=2.0.0,<3.0.0
+
+# Komut Satırı Arayüzü ve Güzel Çıktı
+typer[all]>=0.9.0,<0.13.0        # 'all' ile rich gibi ekstraları da kurar
+rich>=13.0.0,<14.0.0
+
+# Retorik Analiz için Duygu Analizi
+vaderSentiment>=3.3.0,<4.0.0
+
+# Argüman Görselleştirme için Grafik Kütüphanesi
+networkx>=3.0,<4.0
+
+# İleride gerekebilecekler (kurulu olabilir veya olmayabilir)
+# scikit-learn>=1.2.0,<1.5.0
+
+# Dil modeli (spaCy için ayrıca indirilecek - komut: python -m spacy download en_core_web_lg)
+# Bert modeli (transformers cache'i ile otomatik indirilecek)
